@@ -11,7 +11,6 @@ function Header() {
       <div>
       {!isLoggedIn && <button onClick={onSignUp}>Sign Up</button>}
       </div>
-      <Navigation />
     </header>
   )
 }
