@@ -11,6 +11,6 @@ function Button({type, onClick, disableBtn, children}) {
       {children}
     </button>
   )
-}
+} 
 
 export default Button

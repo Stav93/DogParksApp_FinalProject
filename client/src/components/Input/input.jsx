@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from "./Input.module.css"
 
-const Input = ({isValid, id, label, type, value, onChange, onBlur}) => {
+const Input = ({isValid, id, label, type, value, onChange, onBlur, placeholder}) => {
 
   return (
     <div className={`${classes.control} ${ isValid === false ? classes.invalid : ''}`}>
@@ -12,6 +12,7 @@ const Input = ({isValid, id, label, type, value, onChange, onBlur}) => {
           value={value}
           onChange={onChange}
           onBlur={onBlur}
+          placeholder={placeholder}
         />
       </div>
   )

@@ -112,6 +112,7 @@ function Login()  {
       value={emailValue}
       onChange={emailChangeHandler}
       onBlur={validateEmailHandler}
+      placeholder="Please enter your Email"
       />
       <Input
       id="password"
@@ -121,6 +122,7 @@ function Login()  {
       value={passwordValue}
       onChange={passwordChangeHandler}
       onBlur={validatePasswordHandler}
+      placeholder="Please enter your password"
       />
       <div className={classes.actions}>
       <Button type="submit" className={classes.btn} disableBtn={!formIsValid}>
